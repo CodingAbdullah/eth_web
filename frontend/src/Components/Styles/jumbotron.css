@@ -1,0 +1,10 @@
+.clickLabel {
+    font-style: italic;
+    font-size: large;
+}
+
+.clickButton {
+    color: lightblue;
+    background-color: green;
+    margin-top: 1.25rem;
+}
