@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Card from '../Components/card';
 import './Styles/jumbotron.css';
+import { Link } from 'react-router-dom';
 
 class Jumbotron extends Component  {
 
@@ -25,6 +26,7 @@ class Jumbotron extends Component  {
         let cards = this.state.names.map((name) => { return <Card value={name} /> });
         return (
             <div className="jumbotron">
+                <Link to="/login">Login</Link>
                 <label class="clickLabel">{this.state.isClicked}</label><br/>
                 <button class="clickButton" onClick={this.updateCounterListener}>Click!</button>
                 {cards} 
