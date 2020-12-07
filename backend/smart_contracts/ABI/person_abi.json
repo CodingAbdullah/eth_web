@@ -1,0 +1,132 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "firstName",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "lastName",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "int256",
+				"name": "setAge",
+				"type": "int256"
+			},
+			{
+				"internalType": "int256",
+				"name": "money",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "getAge",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getFirstName",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getLastName",
+		"outputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTransactionMoney",
+		"outputs": [
+			{
+				"internalType": "int256",
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "newAge",
+				"type": "int256"
+			}
+		],
+		"name": "setAge",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "firstName",
+				"type": "bytes32"
+			}
+		],
+		"name": "setFirstName",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "lastName",
+				"type": "bytes32"
+			}
+		],
+		"name": "setLastName",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "int256",
+				"name": "money",
+				"type": "int256"
+			}
+		],
+		"name": "setTransactionMoney",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
