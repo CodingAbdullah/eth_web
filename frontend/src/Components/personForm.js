@@ -40,23 +40,24 @@ class PersonForm extends Component {
         const age = this.state.age;
         const transactionMoney = this.state.transactionMoney;
         
-        const URL = "localhost:5050/signUpForm";
-
+        const URL = 'http://localhost:5050/signUpForm';
+        
         const body = {
             firstname,
             lastname,
             age,
             transactionMoney
         };
-
+        
         const options = {
             method: 'POST',
-            headers: {
-                'content-type': 'application/json'
+            headers : {
+                'accepts' : 'application/json',
+                'content-type' : 'application/json'
             },
             body: JSON.stringify(body)
         };
-        
+
         fetch(URL, options)
         .then( responseBody => {
             responseBody.json();
@@ -73,22 +74,22 @@ class PersonForm extends Component {
         return (
             <div className="person">
                 <h1 className="person-title">Person Form</h1>
-                <form class="person-form" onSubmit={this.formHandler}>
-                    <div class="form-group">
+                <form className="person-form" onSubmit={this.formHandler}>
+                    <div className="form-group">
                         <label>First Name</label>
-                        <input onChange={this.firstNameHandler} name="firstname" type="text" class="form-control" required />
+                        <input onChange={this.firstNameHandler} name="firstname" type="text" className="form-control" required />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label>Last Name</label>
-                        <input onChange={this.lastNameHandler} name="lastname" type="text" class="form-control" required />
+                        <input onChange={this.lastNameHandler} name="lastname" type="text" className="form-control" required />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label>Age</label>
-                        <input onChange={this.ageHandler} name="age" type="number" class="form-control" min="18" max="150" required />
+                        <input onChange={this.ageHandler} name="age" type="number" className="form-control" min="18" max="150" required />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                         <label>Transaction Money</label>
-                        <input onChange={this.transactionMoneyHandler} name="transactionMoney" type="number" class="form-control" min="1" required />
+                        <input onChange={this.transactionMoneyHandler} name="transactionMoney" type="number" className="form-control" min="1" required />
                     </div>
                     <input type="submit" value="Submit" />
                 </form>

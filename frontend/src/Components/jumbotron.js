@@ -27,8 +27,8 @@ class Jumbotron extends Component  {
         return (
             <div className="jumbotron">
                 <Link to="/login">Login</Link>
-                <label class="clickLabel">{this.state.isClicked}</label><br/>
-                <button class="clickButton" onClick={this.updateCounterListener}>Click!</button>
+                <label className="clickLabel">{this.state.isClicked}</label><br/>
+                <button className="clickButton" onClick={this.updateCounterListener}>Click!</button>
                 {cards} 
             </div>
         )
