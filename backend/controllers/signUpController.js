@@ -22,10 +22,3 @@ exports.signUpForm = ("/", (req, res) => {
         })
     })
 });
-
-exports.getForm = ("/", (req, res) => {
-    res.json({
-        status: 200,
-        message: "Welcome!"
-    })
-});

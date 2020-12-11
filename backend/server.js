@@ -1,6 +1,7 @@
 require("dotenv").config({ path: ".env"});
 const express = require("express");
 const signUpRouter = require("../backend/routes/signUpRouter");
+const userRouter = require("../backend/routes/userRouter");
 const cors = require("cors");
 const app = express();
 
@@ -17,3 +18,4 @@ app.use(express.urlencoded({extended: false}));
 
 // Use middleware functions with specified routes
 app.use("/signUpForm", signUpRouter);
+app.use("/getUsers", userRouter);
