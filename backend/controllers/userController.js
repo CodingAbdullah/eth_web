@@ -11,5 +11,5 @@ exports.getUsers = ("/", (req, res) => {
                 users: persons
             });
         }
-    })
+    });
 });

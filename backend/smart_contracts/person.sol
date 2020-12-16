@@ -1,4 +1,4 @@
-pragma solidity ^0.7.5;
+pragma solidity ^0.4.17;
 
 contract Person {
     bytes32 private firstname;
@@ -6,19 +6,19 @@ contract Person {
     int256 private age;
     int256 private transactionMoney;
     
-    constructor(bytes32 firstName, bytes32 lastName, int256 setAge, int256 money) {
-        firstname = firstName;
-        lastname = lastName;
+    constructor(bytes32 first, bytes32 last, int256 setAge, int256 money) {
+        firstname = first;
+        lastname = last;
         age = setAge;
         transactionMoney = money;
     }
 
-    function setFirstName(bytes32 firstName) public {
-        firstname = firstName;
+    function setFirstName(bytes32 first) public {
+        firstname = first;
     }
 
-    function setLastName(bytes32 lastName) public {
-        lastname = lastName;
+    function setLastName(bytes32 last) public {
+        lastname = last;
     }
     
     function setAge(int256 newAge) public {
