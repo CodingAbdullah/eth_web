@@ -1,13 +1,15 @@
-pragma solidity ^0.8.3;
+// SPDX-License-Identifier: MIT
 
-contract message {
+pragma solidity ^0.8.3 ;
+
+contract Message {
 	string message;
 
-	constructor(string initialMessage){
+	constructor(string memory initialMessage){
 		message = initialMessage;
 	}
 
-	function setMessage(string newMessage) public {
+	function setMessage(string memory newMessage) public {
 		message = newMessage;
 	}
 }
