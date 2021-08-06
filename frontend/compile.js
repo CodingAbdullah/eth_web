@@ -21,4 +21,3 @@ module.exports = JSON.parse(solc.compile(JSON.stringify({
       },
     },
   }))).contracts['message.sol'].Message;
-
